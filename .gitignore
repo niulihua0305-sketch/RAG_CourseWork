@@ -1,0 +1,53 @@
+# Python and notebooks
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+
+# Environments and editors
+.venv/
+venv/
+env/
+.idea/
+.vscode/
+
+# Credentials
+.env
+.env.*
+!.env.example
+
+# Generated corpora and vector stores
+data/corpus_*.jsonl
+data/*_cleaned.jsonl
+chunking/data/*
+!chunking/data/.gitkeep
+embedding/output/*
+!embedding/output/.gitkeep
+*.faiss
+
+# Generated retrieval and generation outputs
+retrieval/results/*
+!retrieval/results/.gitkeep
+generation/results/*
+!generation/results/.gitkeep
+
+# Model caches and logs
+.cache/
+models/
+*.log
+
+# Coursework packaging and office artefacts
+*.zip
+~$*
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.html
+*.files/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
